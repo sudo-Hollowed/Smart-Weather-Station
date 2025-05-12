@@ -24,7 +24,7 @@ smart-station-dashboard/
 ├── index.html # Main dashboard page
 ├── styles.css # All styling, responsive and clean
 ├── script.js # Logic for map, charts and data rendering
-└── README.md # You are here!
+
 
 
 ## 🔧 How to Use
