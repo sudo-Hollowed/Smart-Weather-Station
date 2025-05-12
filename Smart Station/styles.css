@@ -6,6 +6,11 @@ body {
   margin: 0;
   background-color: #f5f7fa;
   color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+body.dark {
+  background-color: #1f2937;
+  color: #f3f4f6;
 }
 header {
   background-color: #1e293b;
@@ -13,6 +18,19 @@ header {
   padding: 1rem 2rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+#toggleTheme {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
 }
 main {
   max-width: 1100px;
@@ -52,6 +70,9 @@ main {
   border-radius: 12px;
   overflow: hidden;
 }
+body.dark .data-table {
+  background-color: #374151;
+}
 .data-table th,
 .data-table td {
   padding: 0.75rem 1rem;
@@ -61,4 +82,7 @@ main {
 .data-table th {
   background-color: #f9fafb;
   font-weight: 600;
+}
+body.dark .data-table th {
+  background-color: #4b5563;
 }
